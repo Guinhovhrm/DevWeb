@@ -14,6 +14,15 @@
 <p id="dataMySQL">Exiba o resultado aqui!</p>
 
 <script>
+	var hoje = new Date();
+	var data = {
+		dia: hoje.getDate(),
+		mes: hoje.getMonth(),
+		ano: hoje.getFullYear()
+	};
+	
+	document.getElementById("dataBR").innerHTML = "Formato Brasileiro: " + data.dia + "/" + (data.mes + 1) + "/" + data.ano
+	document.getElementById("dataMySQL").innerHTML = "Formato internacional: " + data.ano + "/" + (data.mes + 1) + "/" + data.dia
 /* 
 getFullYear()	Returns the year (four digits)
 getMonth()	Returns the month (from 0-11)

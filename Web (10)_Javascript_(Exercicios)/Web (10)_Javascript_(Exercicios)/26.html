@@ -13,7 +13,13 @@
 <p id="demo">Exiba o resultado aqui!</p>
 
 <script>
-// Crie o código aqui...
+	var agora = new Date()
+	var Data = {
+		data: agora.getDate() + "/" + (agora.getMonth()+1) + "/" + agora.getFullYear(),
+		hora: agora.getHours() + ":" + agora.getMinutes(),
+	};
+	strData = "Data: " + Data.data + "\nHora: " + Data.hora //não cria uma nova linha (\n)
+	document.getElementById("demo").innerHTML = strData
 </script>
 
 </body>

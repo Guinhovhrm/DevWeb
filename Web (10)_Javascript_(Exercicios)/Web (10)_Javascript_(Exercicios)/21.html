@@ -13,10 +13,12 @@
 <button onclick="aleatorio()">Gerar!</button>
 <p id="demo">Mostre o resultado aqui</p> 
 
-<script>
-// Crie o código aqui
-// Dica: Use o método ".ramdom()" da classe "Math", que retorna um número entre 0 e 1.
 
+<script>
+	function aleatorio(){
+		var nRand = Math.random() * 10
+		document.getElementById("demo").innerHTML = nRand
+}
 </script>
 
 </body>
