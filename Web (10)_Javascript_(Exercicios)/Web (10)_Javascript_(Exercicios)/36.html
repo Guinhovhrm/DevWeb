@@ -15,7 +15,11 @@
 <script>
 var familia = ['Chun','Bruce','Rita','Muhammad A','Maga','Amy','Rock','Java','Jet', 'Negra','Stan','Hitmon','Salvador Da','Daniella Cicare','Wal']
 
-// Escreva o código aqui...
+	for(var i = 0; i < familia.length; i++){
+		nome = familia[i] + " Lee";
+		familia.splice(i, 1, nome)	
+	}
+	document.getElementById("demo").innerHTML = familia 
 </script>
 
 </body>
