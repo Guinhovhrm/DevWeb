@@ -13,7 +13,12 @@
 <p id="demo">Exiba o resultado aqui!</p> 
 
 <script>
+var txt = ""
 var item = {"produto":"Caneca", "preco":19.90};
+	for (var caracteristica in item){
+		txt += item[caracteristica] + " "
+		document.getElementById("demo").innerHTML = txt
+	}
 
 </script>
 
