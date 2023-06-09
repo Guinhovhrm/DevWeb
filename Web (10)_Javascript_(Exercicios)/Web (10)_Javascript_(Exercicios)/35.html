@@ -13,7 +13,13 @@
 <p id="demo">Exiba o resultado aqui!</p> 
 
 <script>
-// Escreva o código aqui...
+	var pares = []
+	for(var i = 1; i < 51; i++){
+		if(i % 2 == 0){
+			pares.push(i)
+		}
+	}
+	document.getElementById("demo").innerHTML = pares
 </script>
 
 </body>

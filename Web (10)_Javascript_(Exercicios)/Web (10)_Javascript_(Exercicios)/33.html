@@ -13,7 +13,22 @@
 <p id="demo">Exiba o resultado aqui!</p> 
 
 <script>
-// Escreva o código aqui...
+	var horario = new Date()
+	var data = {
+		hora: horario.getHours(),
+		minuto: horario.getMinutes(),
+		segundo: horario.getSeconds()
+	};
+	
+	if(data.hora >= 6 & data.hora < 12){
+		document.getElementById("demo").innerHTML = "Bom dia!"
+	}else if(data.hora >= 12 & data.hora < 18){
+		document.getElementById("demo").innerHTML = "Boa tarde!"
+
+	}else{
+		document.getElementById("demo").innerHTML = "Boa noite!"
+	}
+
 </script>
 
 </body>

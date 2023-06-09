@@ -1,2 +1,2 @@
 # Exercicios que não consegui fazer
-21
+34
