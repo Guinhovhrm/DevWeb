@@ -23,7 +23,12 @@ $(document).ready(function(){
 		Sintaxe:
 			$(this).attr("src", "exemplo.png");
 	*/
-	
+	$("#imagem").hover(function(){
+		$(this).attr("src", "22_on.png");
+	}, function(){
+		$(this).attr("src", "22_off.png");
+
+	});
 	
 	
 });
