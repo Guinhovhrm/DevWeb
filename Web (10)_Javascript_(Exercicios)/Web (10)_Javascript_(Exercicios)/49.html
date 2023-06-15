@@ -11,8 +11,18 @@
 <h2>Utilize os eventos "onFocus" e "onBlur" para alterar a cor de fundo de do input quando ele for selecionado e voltar à cor normal quando ele perder o foco.</h2>
 
 <label>Nome</label>
-<input type="text" id="nome" name="nome"/>
+<input type="text" id="nome" name="nome" onfocus="foco()" onblur="fora()"/>
 
+
+<script>
+	var getid = document.getElementById("nome");
+	function foco(){
+		getid.style.backgroundColor="red";
+	}
+	function fora(){
+		getid.style.backgroundColor="revert";
+	}
+</script>
 
 </body>
 </html>

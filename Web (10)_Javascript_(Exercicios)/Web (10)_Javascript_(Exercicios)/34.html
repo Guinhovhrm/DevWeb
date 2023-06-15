@@ -24,6 +24,20 @@
 
 <script>
 
+var getid = document.getElementById("demo");
+	function verificaFruta(){
+		var fruta = document.getElementById("fruta").value;
+		switch (fruta){
+			case "Banana":
+				getid.innerHTML = "Hum! Que delícia!";
+				break;
+			case "Tomate":
+				getid.innerHTML = "É fruta?!";
+
+			default:
+				getid.innerHTML = "Nunca ouvi falar dessa fruta...";
+		}	
+	}
 </script>
 
 </body>
