@@ -15,9 +15,15 @@
 		Página Home 	> 'Visualize a página principal do site!',
 		Página Galeria 	> 'Veja nossas fotos!',
 		Página Contato 	> 'Quer falar com a gente? Entre em contato!'];
-*/
+*/	
+	function menuDescricao(paginaASerMostrada){	
+		var home = document.getElementById("home");
+		home.addEventListener("mouseenter", function(event){
+			document.getElementById("home").innerHTML = 'Visualize a página principal do site!'
+			
+		})
+	}
 
-//Escreva o código aqui...
 </script>
 
 <nav>
