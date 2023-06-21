@@ -13,6 +13,10 @@ $(document).ready(function(){
 	novoPrimeiroParagrafoFora =  "<p>Apareço antes e fora do div!</p>";
 	novoUltimoParagrafoFora = "<p>Apareço depois e fora do div!</p>";
 	
+	$("div").prepend("novoPrimeiroParagrafoDentro")
+	$("div").append("novoUltimoParagrafoDentro")
+	$("div").before("novoUltimoParagrafoFora")
+	$("div").after("novoUltimoParagrafoFora")
 });
 </script>
 </head>
