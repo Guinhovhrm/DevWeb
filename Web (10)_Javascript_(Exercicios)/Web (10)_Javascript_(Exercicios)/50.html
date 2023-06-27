@@ -17,20 +17,25 @@
 		Página Contato 	> 'Quer falar com a gente? Entre em contato!'];
 */	
 	function menuDescricao(paginaASerMostrada){	
-		var home = document.getElementById("home");
-		home.addEventListener("mouseenter", function(event){
-			document.getElementById("home").innerHTML = 'Visualize a página principal do site!'
-			
-		})
+		switch(paginaASerMostrada){
+			case "#home":
+				document.getElementById("menu_descricao_inner").innerHTML = 'Visualize a página principal do site!'
+				break
+			case "#galeria":
+				document.getElementById("menu_descricao_inner").innerHTML = 'Veja nossas fotos!'
+				break
+			case "#contato":
+				document.getElementById("menu_descricao_inner").innerHTML = 'Quer falar com a gente? Entre em contato!'	
+				break
+		}
 	}
-
 </script>
 
 <nav>
 	<div id="menu_links">
-		<div><a href="#home">Home</a></div>
-		<div><a href="#galeria">Galeria</a></div>
-		<div><a href="#contato">Contato</a></div>
+		<div><a href="#home" onclick="menuDescricao('#home')"> Home</a></div>
+		<div><a href="#galeria" onclick="menuDescricao('#galeria')"> Galeria</a></div>
+		<div><a href="#contato" onclick="menuDescricao('#contato')"> Contato</a></div>
 	</div>
 
 	<div id="menu_descricao">
