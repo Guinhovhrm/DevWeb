@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:  100vh;
+    grid-area: "imgPequena imgGrande";
+}
+.imgPequena{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 11vh 11vh 11vh 11vh 11vh 11vh 11vh 11vh 11vh;
+    margin: 10px;
+    grid-area: imgPequena;
+}
+.imgGrande{
+    grid-area: imgGrande;
+}
