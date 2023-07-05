@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade E - Coisa pra kct</title>
 </head>
 <body>
-    
+	<form action="#" method="post">
+		<table border="1px solid">
+			<tr>
+				<td>
+					<label for="nome">Nome do candidato:</label>
+				</td>
+				<td>
+					<input type="text" name="nome" id="nome">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="curriculo">Currículo:</label>
+				</td>
+				<td>
+					<input type="file" name="curriculo" id="curriculo">
+				</td>
+			</tr>
+			<tr>
+				<td>Competências:</td>
+				<td>
+					<input type="checkbox" name="bdd" id="bdd">
+					<label for="bdd">Banco de Dados</label>
+					<br>
+					<input type="checkbox" name="docs" id="docs">
+					<label for="docs">Documentação</label>
+					<br>
+					<input type="checkbox" name="interface" id="interface">
+					<label for="interface">Criação de Interface</label>
+					<br>
+					<input type="checkbox" name="programacao" id="programacao">
+					<label for="programacao">Linguagem de Programação</label>
+					<br>
+					<input type="checkbox" name="requisitos" id="requisitos">
+					<label for="requisitos">Teste de Requisitos</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Informações adicionais:</td>
+				<td>
+					<textarea name="msg" rows="4" cols="35" style="font-style: italic;">
+                        [Coloque aqui outras informações relevantes sobre seu perfil profissional.]
+                    </textarea>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;" colspan="2"> 
+					<input type="submit" name="candidatar" value="Candidatar-se">
+				</td>
+			</tr>
+
+            
+		</table>
+	</form>
 </body>
 </html>
