@@ -7,6 +7,29 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="jquery.ordertable.js"></script>
+  <script src="jquery.ordertable.min.js"></script>
+
+  <style>
+    .order-table { cursor: pointer; }
+
+.order-table:after, .order-table--asc:after, .order-table--desc:after {
+  font-size: .7em;
+  width: 1em;
+  display: inline-block;
+}
+
+.order-table:after { content: '▲▼'; }
+
+.order-table--asc:after { content: '▼'; }
+
+.order-table--desc:after { content: '▲'; }
+  </style>
+
+
+
+
 </head>
 
 <body>
@@ -45,7 +68,7 @@
 <!-- Conteúdo -->
 <h2>Tabela</h2>
   <div class="table-responsive">          
-  <table class="table">
+  <table class="table table-striped">
     <thead>
       <tr>
         <th>Matrícula</th>
@@ -117,6 +140,11 @@
   </div>
 <!-- Conteúdo -->
 
+<script>
+  $(document).ready(function() {
+      $("table").orderTable();
+  });
+</script>
 </div>
 
 </body>
