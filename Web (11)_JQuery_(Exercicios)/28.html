@@ -30,7 +30,7 @@
 $(document).ready(function(){
 
 	$(".clique_desliza").click(function(){
-		$(".painel_desliza").slideToggle("slow");	
+		$(this).next().slideToggle("slow");	
 		/* Dica: 
 		Utilizar a classe 'painel_desliza' para deslizar o div, faz com que todos daquela classe Deslizem.
 		A primeira opção (e não muito inteligente) é criar um id para cada painel e uma função para cada um! ¬_¬
